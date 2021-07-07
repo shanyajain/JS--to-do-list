@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <script src="app.js"></script>
+    <title>My To-Do List</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">My To-Do List</h1>
+          <p>Today's tasks!</p>
+          <form id="search-books">
+            <input type="text" placeholder="Search tasks..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="book-list">
+	    	<h2 class="title">Tasks to perform</h2>
+	    	<ul>
+	    		<li>
+	    			<span class="name">Grocery Shopping</span>
+	    			<span class="delete">done</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Revision of DS Algo</span>
+	    			<span class="delete">done</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Practice Coding Questions</span>
+	    			<span class="delete">done</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Complete the remaining Project</span>
+	    			<span class="delete">done</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-book">
+        <input type="checkbox" id="hide" />
+        <label for="hide">Hide all tasks</label>
+	    	<input type="text" placeholder="Add a task..." />
+	    	<button>Add</button>
+	    </form>
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>Content for about tab...</p>
+          <p>This is my dynamic to-do list that i created for myself to utilise most of the time.</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Content for contact tab...</p>
+          <p>You can contact me by mailing me on <a class="cm" href="mailto:shanyajain654@gmail.com">this.</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
